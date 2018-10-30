@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AE1F0CED7DA38FDF822A6D5 /* Pods_Dank_Ranks_Revisited.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C9227FFF9C53B0D39C622E /* Pods_Dank_Ranks_Revisited.framework */; };
+		8616616C213EE67B00032BA2 /* EasyImagy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8616615F213EE66A00032BA2 /* EasyImagy.framework */; };
+		8616616D213EE67B00032BA2 /* EasyImagy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8616615F213EE66A00032BA2 /* EasyImagy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		861719D22135D5FF0092C2BD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861719D12135D5FF0092C2BD /* SettingsViewController.swift */; };
+		861719D42135D7640092C2BD /* PublicRanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861719D32135D7640092C2BD /* PublicRanksViewController.swift */; };
+		861719D82135DA8D0092C2BD /* CompilationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861719D72135DA8D0092C2BD /* CompilationViewController.swift */; };
+		861940282139E6DC003ECAD3 /* ShareRankPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861940272139E6DC003ECAD3 /* ShareRankPopoverViewController.swift */; };
+		8619402A213AFF31003ECAD3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86194029213AFF31003ECAD3 /* Info.plist */; };
+		86194030213B1B9A003ECAD3 /* ImageCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8619402F213B1B9A003ECAD3 /* ImageCellNib.xib */; };
+		861C30D1213091F300BBC53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C30D0213091F300BBC53A /* AppDelegate.swift */; };
+		861C30D3213091F300BBC53A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C30D2213091F300BBC53A /* HomeViewController.swift */; };
+		861C30D5213091F300BBC53A /* EnterTextsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C30D4213091F300BBC53A /* EnterTextsViewController.swift */; };
+		861C30D8213091F300BBC53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861C30D6213091F300BBC53A /* Main.storyboard */; };
+		861C30DA213091F400BBC53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861C30D9213091F400BBC53A /* Assets.xcassets */; };
+		861C30DD213091F400BBC53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861C30DB213091F400BBC53A /* LaunchScreen.storyboard */; };
+		861C30E5213092C100BBC53A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C30E4213092C100BBC53A /* SplashViewController.swift */; };
+		861C30E72130931600BBC53A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C30E62130931600BBC53A /* Models.swift */; };
+		861C30E92130932600BBC53A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C30E82130932600BBC53A /* Helper.swift */; };
+		861C30F32130948700BBC53A /* Avenir Next Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861C30EF2130948700BBC53A /* Avenir Next Heavy.otf */; };
+		861C30F42130948700BBC53A /* Avenir Next Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861C30F02130948700BBC53A /* Avenir Next Bold.otf */; };
+		861C30F52130948700BBC53A /* Torque-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 861C30F12130948700BBC53A /* Torque-Bold.otf */; };
+		861C30F62130948700BBC53A /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 861C30F22130948700BBC53A /* Pacifico-Regular.ttf */; };
+		861C30F82130B89700BBC53A /* SetupRankOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C30F72130B89700BBC53A /* SetupRankOptionsViewController.swift */; };
+		862793C92131C0CD00BC3A89 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862793C82131C0CD00BC3A89 /* RankingViewController.swift */; };
+		862793CD2131C77F00BC3A89 /* EnterImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862793CC2131C77F00BC3A89 /* EnterImagesViewController.swift */; };
+		862793CF2131CA2500BC3A89 /* FinalResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862793CE2131CA2500BC3A89 /* FinalResultsViewController.swift */; };
+		862793D12131CAAB00BC3A89 /* MyImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862793D02131CAAB00BC3A89 /* MyImageViewController.swift */; };
+		862793D82131E38E00BC3A89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862793D72131E38E00BC3A89 /* StoreKit.framework */; };
+		862793DA2131E39C00BC3A89 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862793D92131E39C00BC3A89 /* CloudKit.framework */; };
+		865556B4215054BA00CA8323 /* ImageCellDeleteNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865556AD215054BA00CA8323 /* ImageCellDeleteNib.xib */; };
+		865556BB2150A7A000CA8323 /* MyImageView2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865556BA2150A7A000CA8323 /* MyImageView2VC.swift */; };
+		86D43093214F1157003A2784 /* ModifyRankingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D43092214F1157003A2784 /* ModifyRankingsVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8616615E213EE66A00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A0E1F85226C005592A2;
+			remoteInfo = "EasyImagy-iOS";
+		};
+		86166160213EE66A00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A171F85226D005592A2;
+			remoteInfo = "EasyImagyTests-iOS";
+		};
+		86166162213EE66A00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A601F852C80005592A2;
+			remoteInfo = "EasyImagy-macOS";
+		};
+		86166164213EE66A00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134A681F852C80005592A2;
+			remoteInfo = "EasyImagyTests-macOS";
+		};
+		86166166213EE66A00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134AA21F85D1F9005592A2;
+			remoteInfo = "EasyImagy-tvOS";
+		};
+		86166168213EE66A00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134AAA1F85D1FA005592A2;
+			remoteInfo = "EasyImagyTests-tvOS";
+		};
+		8616616A213EE66A00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6134AD21F85D800005592A2;
+			remoteInfo = "EasyImagy-watchOS";
+		};
+		8616616E213EE67B00032BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D6134A0D1F85226C005592A2;
+			remoteInfo = "EasyImagy-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86166153213EE62B00032BA2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8616616D213EE67B00032BA2 /* EasyImagy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02C9227FFF9C53B0D39C622E /* Pods_Dank_Ranks_Revisited.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dank_Ranks_Revisited.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasyImagy.xcodeproj; path = EasyImagy/EasyImagy.xcodeproj; sourceTree = "<group>"; };
+		861719D12135D5FF0092C2BD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		861719D32135D7640092C2BD /* PublicRanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicRanksViewController.swift; sourceTree = "<group>"; };
+		861719D72135DA8D0092C2BD /* CompilationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompilationViewController.swift; sourceTree = "<group>"; };
+		861940272139E6DC003ECAD3 /* ShareRankPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRankPopoverViewController.swift; sourceTree = "<group>"; };
+		86194029213AFF31003ECAD3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8619402F213B1B9A003ECAD3 /* ImageCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCellNib.xib; sourceTree = "<group>"; };
+		861C30CD213091F300BBC53A /* Dank Ranks Revisited.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dank Ranks Revisited.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		861C30D0213091F300BBC53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		861C30D2213091F300BBC53A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		861C30D4213091F300BBC53A /* EnterTextsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTextsViewController.swift; sourceTree = "<group>"; };
+		861C30D7213091F300BBC53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		861C30D9213091F400BBC53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		861C30DC213091F400BBC53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		861C30E4213092C100BBC53A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		861C30E62130931600BBC53A /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		861C30E82130932600BBC53A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		861C30EF2130948700BBC53A /* Avenir Next Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Next Heavy.otf"; sourceTree = "<group>"; };
+		861C30F02130948700BBC53A /* Avenir Next Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Next Bold.otf"; sourceTree = "<group>"; };
+		861C30F12130948700BBC53A /* Torque-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Torque-Bold.otf"; sourceTree = "<group>"; };
+		861C30F22130948700BBC53A /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		861C30F72130B89700BBC53A /* SetupRankOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupRankOptionsViewController.swift; sourceTree = "<group>"; };
+		862793C82131C0CD00BC3A89 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		862793CC2131C77F00BC3A89 /* EnterImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterImagesViewController.swift; sourceTree = "<group>"; };
+		862793CE2131CA2500BC3A89 /* FinalResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalResultsViewController.swift; sourceTree = "<group>"; };
+		862793D02131CAAB00BC3A89 /* MyImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageViewController.swift; sourceTree = "<group>"; };
+		862793D62131E38900BC3A89 /* Dank Ranks Revisited.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dank Ranks Revisited.entitlements"; sourceTree = "<group>"; };
+		862793D72131E38E00BC3A89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		862793D92131E39C00BC3A89 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		865556AD215054BA00CA8323 /* ImageCellDeleteNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCellDeleteNib.xib; sourceTree = "<group>"; };
+		865556BA2150A7A000CA8323 /* MyImageView2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageView2VC.swift; sourceTree = "<group>"; };
+		86D43092214F1157003A2784 /* ModifyRankingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRankingsVC.swift; sourceTree = "<group>"; };
+		9261F4C2E9959EB6068CDD7A /* Pods-Dank Ranks Revisited.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dank Ranks Revisited.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dank Ranks Revisited/Pods-Dank Ranks Revisited.debug.xcconfig"; sourceTree = "<group>"; };
+		D600DE0FC6A54B42694E37B1 /* Pods-Dank Ranks Revisited.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dank Ranks Revisited.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dank Ranks Revisited/Pods-Dank Ranks Revisited.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		861C30CA213091F300BBC53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8616616C213EE67B00032BA2 /* EasyImagy.framework in Frameworks */,
+				862793DA2131E39C00BC3A89 /* CloudKit.framework in Frameworks */,
+				4AE1F0CED7DA38FDF822A6D5 /* Pods_Dank_Ranks_Revisited.framework in Frameworks */,
+				862793D82131E38E00BC3A89 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86166155213EE66A00032BA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8616615F213EE66A00032BA2 /* EasyImagy.framework */,
+				86166161213EE66A00032BA2 /* EasyImagyTests-iOS.xctest */,
+				86166163213EE66A00032BA2 /* EasyImagy.framework */,
+				86166165213EE66A00032BA2 /* EasyImagyTests.xctest */,
+				86166167213EE66A00032BA2 /* EasyImagy.framework */,
+				86166169213EE66A00032BA2 /* EasyImagyTests.xctest */,
+				8616616B213EE66A00032BA2 /* EasyImagy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		861C30C4213091F300BBC53A = {
+			isa = PBXGroup;
+			children = (
+				861C30CF213091F300BBC53A /* Dank Ranks Revisited */,
+				861C30CE213091F300BBC53A /* Products */,
+				861C30EE2130947C00BBC53A /* Fonts */,
+				BA5986A3C548D4EE6B64367A /* Pods */,
+				B3C0A70752B3C49974518F94 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		861C30CE213091F300BBC53A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				861C30CD213091F300BBC53A /* Dank Ranks Revisited.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		861C30CF213091F300BBC53A /* Dank Ranks Revisited */ = {
+			isa = PBXGroup;
+			children = (
+				862793D62131E38900BC3A89 /* Dank Ranks Revisited.entitlements */,
+				862793D52131CE1C00BC3A89 /* Misc */,
+				862793D42131CE0F00BC3A89 /* Pre-Ranking VCs */,
+				862793C82131C0CD00BC3A89 /* RankingViewController.swift */,
+				86D43092214F1157003A2784 /* ModifyRankingsVC.swift */,
+				865556BA2150A7A000CA8323 /* MyImageView2VC.swift */,
+				862793CE2131CA2500BC3A89 /* FinalResultsViewController.swift */,
+				861940272139E6DC003ECAD3 /* ShareRankPopoverViewController.swift */,
+				861719D72135DA8D0092C2BD /* CompilationViewController.swift */,
+				861719D32135D7640092C2BD /* PublicRanksViewController.swift */,
+				86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */,
+				8619402F213B1B9A003ECAD3 /* ImageCellNib.xib */,
+				865556AD215054BA00CA8323 /* ImageCellDeleteNib.xib */,
+				861C30D6213091F300BBC53A /* Main.storyboard */,
+				861C30D9213091F400BBC53A /* Assets.xcassets */,
+				861C30DB213091F400BBC53A /* LaunchScreen.storyboard */,
+				86194029213AFF31003ECAD3 /* Info.plist */,
+			);
+			path = "Dank Ranks Revisited";
+			sourceTree = "<group>";
+		};
+		861C30EE2130947C00BBC53A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				861C30F02130948700BBC53A /* Avenir Next Bold.otf */,
+				861C30EF2130948700BBC53A /* Avenir Next Heavy.otf */,
+				861C30F22130948700BBC53A /* Pacifico-Regular.ttf */,
+				861C30F12130948700BBC53A /* Torque-Bold.otf */,
+			);
+			name = Fonts;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		862793D42131CE0F00BC3A89 /* Pre-Ranking VCs */ = {
+			isa = PBXGroup;
+			children = (
+				861C30D2213091F300BBC53A /* HomeViewController.swift */,
+				861C30F72130B89700BBC53A /* SetupRankOptionsViewController.swift */,
+				862793CC2131C77F00BC3A89 /* EnterImagesViewController.swift */,
+				861C30D4213091F300BBC53A /* EnterTextsViewController.swift */,
+			);
+			path = "Pre-Ranking VCs";
+			sourceTree = "<group>";
+		};
+		862793D52131CE1C00BC3A89 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				861C30D0213091F300BBC53A /* AppDelegate.swift */,
+				861C30E4213092C100BBC53A /* SplashViewController.swift */,
+				861C30E82130932600BBC53A /* Helper.swift */,
+				861C30E62130931600BBC53A /* Models.swift */,
+				861719D12135D5FF0092C2BD /* SettingsViewController.swift */,
+				862793D02131CAAB00BC3A89 /* MyImageViewController.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		B3C0A70752B3C49974518F94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				862793D92131E39C00BC3A89 /* CloudKit.framework */,
+				862793D72131E38E00BC3A89 /* StoreKit.framework */,
+				02C9227FFF9C53B0D39C622E /* Pods_Dank_Ranks_Revisited.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA5986A3C548D4EE6B64367A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9261F4C2E9959EB6068CDD7A /* Pods-Dank Ranks Revisited.debug.xcconfig */,
+				D600DE0FC6A54B42694E37B1 /* Pods-Dank Ranks Revisited.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		861C30CC213091F300BBC53A /* Dank Ranks Revisited */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 861C30E1213091F400BBC53A /* Build configuration list for PBXNativeTarget "Dank Ranks Revisited" */;
+			buildPhases = (
+				5C7174B850259294DF2202DA /* [CP] Check Pods Manifest.lock */,
+				861C30C9213091F300BBC53A /* Sources */,
+				861C30CA213091F300BBC53A /* Frameworks */,
+				861C30CB213091F300BBC53A /* Resources */,
+				0742267819047ABCB77AF287 /* [CP] Embed Pods Frameworks */,
+				86166153213EE62B00032BA2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8616616F213EE67B00032BA2 /* PBXTargetDependency */,
+			);
+			name = "Dank Ranks Revisited";
+			productName = "Dank Ranks Revisited";
+			productReference = 861C30CD213091F300BBC53A /* Dank Ranks Revisited.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		861C30C5213091F300BBC53A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Tony Jiang";
+				TargetAttributes = {
+					861C30CC213091F300BBC53A = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 861C30C8213091F300BBC53A /* Build configuration list for PBXProject "Dank Ranks Revisited" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 861C30C4213091F300BBC53A;
+			productRefGroup = 861C30CE213091F300BBC53A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 86166155213EE66A00032BA2 /* Products */;
+					ProjectRef = 86166154213EE66A00032BA2 /* EasyImagy.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				861C30CC213091F300BBC53A /* Dank Ranks Revisited */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8616615F213EE66A00032BA2 /* EasyImagy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasyImagy.framework;
+			remoteRef = 8616615E213EE66A00032BA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86166161213EE66A00032BA2 /* EasyImagyTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "EasyImagyTests-iOS.xctest";
+			remoteRef = 86166160213EE66A00032BA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86166163213EE66A00032BA2 /* EasyImagy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasyImagy.framework;
+			remoteRef = 86166162213EE66A00032BA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86166165213EE66A00032BA2 /* EasyImagyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EasyImagyTests.xctest;
+			remoteRef = 86166164213EE66A00032BA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86166167213EE66A00032BA2 /* EasyImagy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasyImagy.framework;
+			remoteRef = 86166166213EE66A00032BA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86166169213EE66A00032BA2 /* EasyImagyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EasyImagyTests.xctest;
+			remoteRef = 86166168213EE66A00032BA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8616616B213EE66A00032BA2 /* EasyImagy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasyImagy.framework;
+			remoteRef = 8616616A213EE66A00032BA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		861C30CB213091F300BBC53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861C30F62130948700BBC53A /* Pacifico-Regular.ttf in Resources */,
+				8619402A213AFF31003ECAD3 /* Info.plist in Resources */,
+				861C30DD213091F400BBC53A /* LaunchScreen.storyboard in Resources */,
+				861C30DA213091F400BBC53A /* Assets.xcassets in Resources */,
+				861C30F52130948700BBC53A /* Torque-Bold.otf in Resources */,
+				861C30F42130948700BBC53A /* Avenir Next Bold.otf in Resources */,
+				86194030213B1B9A003ECAD3 /* ImageCellNib.xib in Resources */,
+				861C30D8213091F300BBC53A /* Main.storyboard in Resources */,
+				865556B4215054BA00CA8323 /* ImageCellDeleteNib.xib in Resources */,
+				861C30F32130948700BBC53A /* Avenir Next Heavy.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0742267819047ABCB77AF287 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dank Ranks Revisited/Pods-Dank Ranks Revisited-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Combinatorics/Combinatorics.framework",
+				"${BUILT_PRODUCTS_DIR}/DHSmartScreenshot/DHSmartScreenshot.framework",
+				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
+				"${BUILT_PRODUCTS_DIR}/EVCloudKitDao/EVCloudKitDao.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialColor/MaterialColor.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilityLib/ReachabilityLib.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Combinatorics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DHSmartScreenshot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVCloudKitDao.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialColor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilityLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dank Ranks Revisited/Pods-Dank Ranks Revisited-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C7174B850259294DF2202DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dank Ranks Revisited-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		861C30C9213091F300BBC53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861C30D5213091F300BBC53A /* EnterTextsViewController.swift in Sources */,
+				861C30E92130932600BBC53A /* Helper.swift in Sources */,
+				862793CF2131CA2500BC3A89 /* FinalResultsViewController.swift in Sources */,
+				861C30D1213091F300BBC53A /* AppDelegate.swift in Sources */,
+				861C30E72130931600BBC53A /* Models.swift in Sources */,
+				862793D12131CAAB00BC3A89 /* MyImageViewController.swift in Sources */,
+				861719D42135D7640092C2BD /* PublicRanksViewController.swift in Sources */,
+				861719D82135DA8D0092C2BD /* CompilationViewController.swift in Sources */,
+				861940282139E6DC003ECAD3 /* ShareRankPopoverViewController.swift in Sources */,
+				862793CD2131C77F00BC3A89 /* EnterImagesViewController.swift in Sources */,
+				865556BB2150A7A000CA8323 /* MyImageView2VC.swift in Sources */,
+				861C30D3213091F300BBC53A /* HomeViewController.swift in Sources */,
+				861C30F82130B89700BBC53A /* SetupRankOptionsViewController.swift in Sources */,
+				861719D22135D5FF0092C2BD /* SettingsViewController.swift in Sources */,
+				861C30E5213092C100BBC53A /* SplashViewController.swift in Sources */,
+				862793C92131C0CD00BC3A89 /* RankingViewController.swift in Sources */,
+				86D43093214F1157003A2784 /* ModifyRankingsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8616616F213EE67B00032BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "EasyImagy-iOS";
+			targetProxy = 8616616E213EE67B00032BA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		861C30D6213091F300BBC53A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				861C30D7213091F300BBC53A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		861C30DB213091F400BBC53A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				861C30DC213091F400BBC53A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		861C30DF213091F400BBC53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		861C30E0213091F400BBC53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		861C30E2213091F400BBC53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9261F4C2E9959EB6068CDD7A /* Pods-Dank Ranks Revisited.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dank Ranks Revisited/Dank Ranks Revisited.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GG56CBZJ65;
+				INFOPLIST_FILE = "Dank Ranks Revisited/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TianProductions.DankRanks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		861C30E3213091F400BBC53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D600DE0FC6A54B42694E37B1 /* Pods-Dank Ranks Revisited.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dank Ranks Revisited/Dank Ranks Revisited.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GG56CBZJ65;
+				INFOPLIST_FILE = "Dank Ranks Revisited/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TianProductions.DankRanks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		861C30C8213091F300BBC53A /* Build configuration list for PBXProject "Dank Ranks Revisited" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				861C30DF213091F400BBC53A /* Debug */,
+				861C30E0213091F400BBC53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		861C30E1213091F400BBC53A /* Build configuration list for PBXNativeTarget "Dank Ranks Revisited" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				861C30E2213091F400BBC53A /* Debug */,
+				861C30E3213091F400BBC53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 861C30C5213091F300BBC53A /* Project object */;
+}
